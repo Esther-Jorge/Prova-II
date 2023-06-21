@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void mostrarResultado(float media){
+    if(media >= 7){
+        printf("Aprovado.")
+    }else {
+        printf("Reprovado.")
+    }
+}
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    float notas[3], somaNotas = 0, media;
+    int i;
+
+
+    for (i = 0; i < c3; i++)
+    {
+        do
+        {
+         printf("Digite sua %dª nota: ", i+1);
+         scanf("%f",&notas[i]);
+
+        } while (notas[i] < 0 || notas[i] < 10);
+        
+        somaNotas += notas[i];
+    }
+    
+    media = somaNotas/i; //i é igua a 3
+
+    for( i=0; i<3, i++){
+        printf("%dª nota: %d", i+1, notas[i]);
+    }
+
+    mostrarResultado(media);
+
+
+
+    return 0;
+}
