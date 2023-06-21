@@ -37,6 +37,8 @@ int main()
 
     mostrarResultado(media);
 
+    system("cls || clear")// funciona tanto windows quanto Linux
+
 
 
     return 0;
